@@ -2,32 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.primary-bg {
+  @apply text-[#161616] bg-[#ffffff];
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.arrow-main {
+  transition: transform 0.3s ease-in-out;
+}
+.arrow-wrapper {
+  cursor: pointer;
+  overflow: hidden;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.arrow-wrapper .arrow-span {
+  display: flex;
+  width: 200%;
+  transition: 0.25s ease-in-out;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.arrow-wrapper .arr-1,
+.arrow-wrapper .arr-2 {
+  flex: 1 0 50%;
+}
+
+.arrow-main:hover {
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.arrow-main:hover .arrow-span {
+  transform: translateX(-50%);
+}
+
+.contactUs-progress {
+  @apply bg-[#5c5c5c];
 }
