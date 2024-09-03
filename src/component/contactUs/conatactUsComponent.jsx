@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from "react";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
@@ -11,7 +12,7 @@ function ContactUsComponent() {
   const [stepper, setstepper] = useState(0);
 
   const initialValues = {
-    lookingFor: "",
+    lookingFor: [],
     lookingForOther: "",
     phoneNo: "",
     email: "",
@@ -50,6 +51,7 @@ function ContactUsComponent() {
                 <ContactFirst
                   setFieldValue={setFieldValue}
                   setstepper={setstepper}
+                  values={values}
                 />
               )}
               {stepper === 1 && <ContactFirstOther setstepper={setstepper} />}

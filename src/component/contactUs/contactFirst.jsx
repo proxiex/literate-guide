@@ -3,25 +3,25 @@ import React from "react";
 
 function ContactFirst({ setFieldValue, setstepper, values }) {
   const setHandler = (value) => {
+    console.log(value)
     let newSelections;
     if (value === "Other") {
       // If "Other" is selected, clear other selections
       newSelections = ["Other"];
       setstepper(1);
     } else {
-      if (values.lookingFor.includes("Other")) {
+      if (values?.lookingFor?.includes("Other")) {
         // Remove "Other" selection if it's already selected
         newSelections = [value];
       } else {
         // Toggle selection
-        if (values.lookingFor.includes(value)) {
-          newSelections = values.lookingFor.filter((item) => item !== value);
+        if (values?.lookingFor?.includes(value)) {
+          newSelections = values?.lookingFor?.filter((item) => item !== value);
         } else {
           newSelections = [...values.lookingFor, value];
         }
       }
 
-      setstepper(newSelections.length > 0 ? 2 : 0);
     }
 
     setFieldValue("lookingFor", newSelections);
@@ -35,11 +35,11 @@ function ContactFirst({ setFieldValue, setstepper, values }) {
 
       {data.map((item) => (
         <button
-          key={item} // Add key for list rendering
+          key={item} 
           type="button"
           onClick={() => setHandler(item)}
-          className={`bg-[#e8e8e8] px-4 lg:py-6 py-3 rounded-full w-full lg:col-span-1 col-span-2 ${
-            values.lookingFor.includes(item) ? "bg-[#6b6969] text-white" : "hover:bg-[#6b6969] hover:text-white"
+          className={` px-4 lg:py-6 py-3 rounded-full w-full lg:col-span-1 col-span-2 ${
+             values?.lookingFor?.includes(item) ? "bg-[#3a3737]  text-white" : "hover:bg-[#201f1f] hover:text-white bg-[#e8e8e8]"
           }`}
         >
           {item}
@@ -47,7 +47,7 @@ function ContactFirst({ setFieldValue, setstepper, values }) {
       ))}
       
       {/* Conditionally render "Next" button */}
-      {values.lookingFor.length > 0 && !values.lookingFor.includes("Other") && (
+      {values?.lookingFor?.length > 0 && !values?.lookingFor?.includes("Other") && (
         <button
           type="button"
           onClick={() => setstepper(2)}
