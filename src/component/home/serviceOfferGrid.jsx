@@ -53,6 +53,7 @@ function ServiceOfferGrid({ data }) {
             <div
               className={`rounded-2xl hover:ring-1 hover:ring-[#2684FB] homecardHover md:p-8 p-6`}
             >
+              
               <div className="flex justify-between mb-8">
                 <div
                   className={`text-white flex h-[60px] w-[60px] rounded-full`}
