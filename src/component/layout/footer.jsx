@@ -6,23 +6,34 @@ import { IoMailOutline } from "react-icons/io5";
 import { MdOutlineFacebook } from "react-icons/md";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { PiInstagramLogoFill } from "react-icons/pi";
+import logo from "../../../assets/logo.png";
+import message from "../../../assets/footer/Letter.svg";
+import address from "../../../assets/footer/Map Point.svg";
+import phone from "../../../assets/footer/Phone.svg";
+import whatsapp from "../../../assets/footer/whatsapp.svg";
 
 function Footer() {
   return (
     <footer className="bg-primary-dark  w-full lg:px-28 md:px-14  px-5 md:py-28 py-14">
-      <div className=" w-full  grid lg:grid-cols-4 md:grid-cols-2 items-start gap-6">
-        <div className="">
+      <div className=" w-full  grid lg:grid-cols-4 md:grid-cols-2 items-start gap-4">
+        <div className="w-full">
           <Link href={"/"}>
             <Image
-              src="/images/logo.svg"
+              src={logo}
               alt="logo"
               width={150}
               height={108}
-              className="max-h-28 max-w-40"
+              className="max-h-28 max-w-40 mb-5"
             />
           </Link>
 
-          <h4 className="text-white font-medium md:py-6 py-6 text-[clamp(24px,calc(24/1420*100vw),24px)]">
+          <p className="text-white w-full text-[#BABABA] text-sm">
+            Lorem ipsum dolor sit amet, consectetur amore adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, consequat.
+          </p>
+
+          {/* <h4 className="text-white font-medium md:py-6 py-6 text-[clamp(24px,calc(24/1420*100vw),24px)]">
             Our Info
           </h4>
           <div>
@@ -31,8 +42,6 @@ function Footer() {
 
               <span className="text-white text-xs">
                 01234567890
-                {/* <br />
-                (Fri-Sat) */}
               </span>
             </div>
             <div className="flex items-center gap-3 mb-4">
@@ -47,8 +56,6 @@ function Footer() {
             <a href="https://www.facebook.com/" target="_blank">
               <MdOutlineFacebook className="text-4xl text-white" />
             </a>
-            {/* <AiFillTwitterCircle className="text-4xl text-white" /> */}
-
             <a
               href="https://www.instagram.com/"
               target="_blank"
@@ -56,7 +63,7 @@ function Footer() {
             >
               <PiInstagramLogoFill className=" m-auto text-black text-2xl" />
             </a>
-          </div>
+          </div> */}
         </div>
 
         {quickLinks.map((item, i) => {
@@ -71,9 +78,14 @@ function Footer() {
               {item?.children?.length
                 ? item.children.map((child, indx) => (
                     <Link href={child.link}>
-                      <span className="text-[#BABABA] text-sm">
-                        {child.title}
-                      </span>
+                      <div className="flex justify-between w-auto gap-4">
+                        <span className="text-[#BABABA] text-sm">
+                          <Image src={child.logo} />
+                        </span>
+                        <span className="text-[#BABABA] text-sm">
+                          {child.title}
+                        </span>
+                      </div>
                     </Link>
                   ))
                 : null}
@@ -84,11 +96,16 @@ function Footer() {
         <div className="w-full lg:col-span-4 md:col-span-2 ">
           <div className="bg-[#454545] w-full h-[1px] my-[30px] sm:my-[60px]" />
           <div className="flex justify-between md:flex-row flex-col">
-            <p className="text-white text-sm">
-              © 2024. All rights reserved.
-            </p>
+            <div className="flex justify-between w-[30%]">
+              <p className="text-white text-sm">
+                © 2024 Pose Promotions. 
+              </p>
+              <div className="text-white text-sm">
+                Website Developed by Lintech Group
+              </div>
+            </div>
             <div className="text-white text-sm">
-              Website Developed by Lintech Group
+              <span>Terms & Conditions | Privacy Policy</span>
             </div>
           </div>
         </div>
@@ -113,7 +130,15 @@ const quickLinks = [
         link: "/",
       },
       {
-        title: "Gallery",
+        title: "Bespoke",
+        link: "/",
+      },
+      {
+        title: "Size Guide",
+        link: "/",
+      },
+      {
+        title: "Contact Us",
         link: "/",
       },
     ],
@@ -123,62 +148,52 @@ const quickLinks = [
     title: "Services",
     children: [
       {
-        title: "Service1",
-        link: "/services/roadTransport",
+        id: "11",
+        title: "Home",
+        link: "/",
       },
       {
-        title: "Service2",
-        link: "/services/expressTransport",
+        title: "About US",
+        link: "/",
       },
       {
-        title: "Service3",
-        link: "/services/whiteGloveRetreats",
+        title: "Bespoke",
+        link: "/",
       },
       {
-        title: "Service4",
-        link: "/services/whiteGloveRetreats",
+        title: "Size Guide",
+        link: "/",
       },
       {
-        title: "Service5",
-        link: "/services/highRangeFurniture",
-      },
-      {
-        title: "Service6",
-        link: "/services/specialDeliveries",
-      },
-      {
-        title: "Service7",
-        link: "/services/internationalTransport",
-      },
-      {
-        title: "Service8",
-        link: "/services/logisticOrganization",
+        title: "Contact Us",
+        link: "/",
       },
     ],
   },
 
   {
-    title: "Company",
+    title: "Services",
     children: [
       {
-        title: "About Us",
+        logo: message,
+        title: "info@posepromotion.co.uk",
         link: "/aboutUs",
       },
       {
-        title: "Contact Us",
+        logo: whatsapp,
+        title: "+44 121 817 7909",
         link: "/contactUs",
       },
       {
-        title: "Terms & Conditions",
+        logo: phone,
+        title: "+44 7825 622005",
         link: "/terms&conditions",
       },
       {
-        title: "Privacy Policy",
+        logo: address,
+        title:
+          "Office 1, Izabella House, 24-26 Regent Pl, Birmingham B1 3NJ, United Kingdom",
         link: "/privacyPolicy",
-      },
-      {
-        title: "Cookies Policy",
-        link: "/cookies",
       },
     ],
   },

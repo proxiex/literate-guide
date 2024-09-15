@@ -24,18 +24,18 @@ export default function Home() {
         <TypeOfTransport /> 
         <ImageGrid/>
         <TransportNetwork/>
-        <OurServices/>
-        <WhyChooseUs/>
+        {/* <OurServices/> */}
+        {/* <WhyChooseUs/> */}
         
-        <Reviews/>
-        <FAQ/>
+        {/* <Reviews/> */}
+        {/* <FAQ/> */}
       </Layout>
     </main>
   );
 }
 
 const top = {
-  title: "Lorem ipsum dolor sit amet consectetur.",
-  description: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+  title: "Global Event Hostesses & Modelling Agency",
+  description: "Global Event Hostesses & Modelling Agency provides professional models and hostesses for events, fashion shows, and brand campaigns worldwide.",
   image: "https://via.placeholder.com/400x500" 
 }

@@ -44,7 +44,7 @@ function HomeTop({data}) {
             x: 0,
             transition: { duration: 0.5 },
           }} type="button" className="primary-button">
-            Let's Talk
+            Hire a model
           </motion.button>
           </Link>
           <Link href={"/aboutUs"}>
@@ -56,7 +56,7 @@ function HomeTop({data}) {
             transition: { duration: 0.5 },
           }} type="button" className="secondary-button">
 
-            About Us
+            Become a model
           </motion.button>
             </Link>
         </div>

@@ -6,7 +6,7 @@ import ScrollText from "../scrollText/scrolltext";
 
 function AboutUs() {
   return (
-    <div className="lg:px-28 md:px-14  px-5 md:py-28 py-14 primary-bg grid grid-cols-3 md:grid-rows-2 md:gap-8 gap-6 font-sora">
+    <div className="lg:px-28 md:px-14  px-5 md:py-28 py-14 primary-bg grid grid-cols-3 md:grid-rows-2 md:gap-9 gap-6 font-sora">
       {/* <div className="flex flex-col"> */}
       <motion.div
         initial={{
@@ -20,8 +20,9 @@ function AboutUs() {
       >
         About Us
       </motion.div>
-          <div className="md:col-span-2 col-span-3 md:text-3xl md:row-span-2 ">
-            <ScrollText value=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex." />
+          <div className="md:col-span-2 col-span-3 md:text-3xl md:row-span-2 w-full">
+            <p className="font-extrabold text-[28px]">Professional models and hostesses for global events and campaigns.</p>
+            <ScrollText value=" Global Event Hostesses & Modelling Agency specializes in providing top-tier talent for events, fashion shows, and brand campaigns worldwide. With a focus on professionalism, elegance, and style, we offer a diverse roster of models and event hostesses, ensuring a seamless blend of beauty and expertise for any occasion. Our agency is committed to delivering exceptional service to help brands stand out on the global stage." />
           </div>
       <motion.div
         initial={{

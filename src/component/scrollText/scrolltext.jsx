@@ -11,7 +11,7 @@ function ScrollText({ value }) {
   const words = value.split(" ");
   return (
     <h4
-      className="text-[var(--text-color)] xl:text-left text-center flex flex-wrap"
+      className="text-[var(--text-color)] md:text-left text-center text-[22px] flex flex-wrap"
       ref={element}
     >
       {words.map((word, index) => {

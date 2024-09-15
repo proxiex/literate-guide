@@ -10,7 +10,7 @@ function TrustCompany() {
    
   return (
     <div className='lg:py-28 md:py-20 py-14 primary-bg '>
-        <h1 className='md:text-4xl text-2xl font-semibold md:mb-16 mb-10 m-auto lg:w-1/2 w-4/5  font-sora text-center'>More than 2,000+ companies trust</h1>
+        <h1 className='md:text-4xl text-2xl font-semibold md:mb-16 mb-10 m-auto lg:w-1/2 w-4/5  font-sora text-center'>Trusted by top global brands for decades.</h1>
         <Marquee className="md:mb-[20px] mb-[8px] relative overflow-x-hidden">
         {images?.map((item, index) => {
           return (

@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import logo_service from "../../../assets/card-logo.svg"
+import Image from "next/image";
+
 
 function ServiceOfferGrid({ data }) {
-
   const [showAll, setShowAll] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -33,7 +35,8 @@ function ServiceOfferGrid({ data }) {
   }, []);
 
   // Calculate number of items to display based on screen size
-  const displayCount = showAll || !isMobile ? data.length : Math.min(4, data.length);
+  const displayCount =
+    showAll || !isMobile ? data.length : Math.min(4, data.length);
 
   return (
     <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
@@ -43,29 +46,31 @@ function ServiceOfferGrid({ data }) {
           initial={{ x: "-100%" }}
           whileInView={{
             x: 0,
-            transition: { duration: parseFloat(`0.${index}`) }
+            transition: { duration: parseFloat(`0.${index}`) },
           }}
         >
           <Link href={item.href}>
-
-          <div
-            className={`rounded-2xl hover:ring-1 hover:ring-[#2684FB] homecardHover md:p-8 p-6`}
-            
+            <div
+              className={`rounded-2xl hover:ring-1 hover:ring-[#2684FB] homecardHover md:p-8 p-6`}
             >
-            <div className="flex justify-between mb-8">
-              <div className={`homecardHovericon text-white flex h-[60px] w-[60px] rounded-full`}>
-                {item.icon}
+              <div className="flex justify-between mb-8">
+                <div
+                  className={`text-white flex h-[60px] w-[60px] rounded-full`}
+                >
+                  <Image src={logo_service} alt={item?.title} />
+                </div>
+                <BsArrowUpRight className="text-2xl icon" />
               </div>
-              <BsArrowUpRight className="text-2xl icon" />
+              <div className="font-semibold mb-2 md:text-base text-xs">
+                {item.label}
+              </div>
+              <div className="md:text-sm text-[10px]">{item.description}</div>
             </div>
-            <div className="font-semibold mb-2 md:text-base text-xs">{item.label}</div>
-            <div className="md:text-sm text-[10px]">{item.description}</div>
-          </div>
-      </Link>
+          </Link>
         </motion.div>
       ))}
       {/* Show button to toggle displaying more items if not already showing all */}
-      {isMobile && !showAll && data.length  > 4 && (
+      {isMobile && !showAll && data.length > 4 && (
         <button className="secondary-button " onClick={toggleShowAll}>
           See all
         </button>

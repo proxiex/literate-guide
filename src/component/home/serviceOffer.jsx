@@ -5,6 +5,7 @@ import ControlTab from "../tab/ControlTab";
 import { FaRoad, FaTruck, FaTruckFast } from "react-icons/fa6";
 import { GiAirplaneDeparture, GiHandTruck } from "react-icons/gi";
 import Image from "next/image";
+import logo_service from "../../../assets/card-logo.svg"
 
 import ServiceOfferGrid from "./serviceOfferGrid";
 
@@ -27,51 +28,51 @@ export default ServiceOffer;
 export const tabs = [
   {
     id: "1",
-    title: "SECTION1",
+    title: "All Services",
     items: [
       {
         id: "01",
-        label: "Card",
+        label: "Model",
         description:
-          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
-        icon: <span className="icon-road text-2xl m-auto "></span>,
+          " Global Event Hostesses & Modelling Agency provides professional models and hostesses for events, fashion shows, and brand campaigns worldwide.",
+        icon: logo_service,
         href: "/services/roadTransport"
       },
       {
         id: "02",
-        label: "Card",
+        label: "Influencers",
         description:
-          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
-        icon: <span className="icon-ExpressTransport text-2xl m-auto"></span>,
+        "Global Event Hostesses & Modelling Agency provides professional models and hostesses for events, fashion shows, and brand campaigns worldwide."  ,      
+        icon: logo_service,
         href: "/services/expressTransport"
       },
       {
         id: "03",
-        label: "Card",
+        label: "Hostesses",
         description:
-          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+          " Global Event Hostesses & Modelling Agency provides professional models and hostesses for events, fashion shows, and brand campaigns worldwide.",
         icon: <span className="icon-Gloves text-2xl m-auto"></span>,
         href: "/services/whiteGloveRetreats"
       },
       {
         id: "04",
-        label: "Card",
+        label: "Dancers",
         description:
-          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+          " Global Event Hostesses & Modelling Agency provides professional models and hostesses for events, fashion shows, and brand campaigns worldwide.",
         icon: <span className="icon-handluggage text-2xl m-auto"></span>,
         href: "/services/whiteGloveRetreats"
       },
       {
         id: "05",
-        label: "Card",
+        label: "Presenters",
         description:
-          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+          " Presenters",
         icon: <span className="icon-Furniture text-2xl m-auto"></span>,
         href: "/services/highRangeFurniture"
       },
       {
         id: "06",
-        label: "Card",
+        label: "Actors",
         description:
           " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
         icon: <span className="icon-SpecialDeliveries text-2xl m-auto"></span>,
@@ -79,7 +80,7 @@ export const tabs = [
       },
       {
         id: "07",
-        label: "Card",
+        label: "Promoters",
         description:
           " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
         icon: <span className="icon-InternationalTransport text-2xl m-auto"></span>,
@@ -87,7 +88,71 @@ export const tabs = [
       },
       {
         id: "08",
-        label: "Card",
+        label: "Dj's",
+        description:
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+        icon: <span className="icon-trolly text-2xl m-auto"></span>,
+        href: "/services/logisticOrganization"
+      },
+      {
+        id: "09",
+        label: "Sales Staff",
+        description:
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+        icon: <span className="icon-trolly text-2xl m-auto"></span>,
+        href: "/services/logisticOrganization"
+      },
+      {
+        id: "10",
+        label: "Commercials",
+        description:
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+        icon: <span className="icon-trolly text-2xl m-auto"></span>,
+        href: "/services/logisticOrganization"
+      },
+      {
+        id: "11",
+        label: "Shootings",
+        description:
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+        icon: <span className="icon-trolly text-2xl m-auto"></span>,
+        href: "/services/logisticOrganization"
+      },
+      {
+        id: "12",
+        label: "Bartenders",
+        description:
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+        icon: <span className="icon-trolly text-2xl m-auto"></span>,
+        href: "/services/logisticOrganization"
+      },
+      {
+        id: "13",
+        label: "Booth Build",
+        description:
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+        icon: <span className="icon-trolly text-2xl m-auto"></span>,
+        href: "/services/logisticOrganization"
+      },
+      {
+        id: "14",
+        label: "Event Manager",
+        description:
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+        icon: <span className="icon-trolly text-2xl m-auto"></span>,
+        href: "/services/logisticOrganization"
+      },
+      {
+        id: "15",
+        label: "Singer",
+        description:
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+        icon: <span className="icon-trolly text-2xl m-auto"></span>,
+        href: "/services/logisticOrganization"
+      },
+      {
+        id: "16",
+        label: "Website Development",
         description:
           " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
         icon: <span className="icon-trolly text-2xl m-auto"></span>,
@@ -97,7 +162,86 @@ export const tabs = [
   },
   {
     id: "2",
-    title: "SECTION2",
+    title: "Event & Entertainment",
+    items: [
+      {
+        id: "01",
+        label: "Promoters",
+        description:
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+        icon: <span className="icon-InternationalTransport text-2xl m-auto"></span>,
+        href: "/services/internationalTransport"
+      },
+      {
+        id: "02",
+        label: "Dj's",
+        description:
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+        icon: <span className="icon-trolly text-2xl m-auto"></span>,
+        href: "/services/logisticOrganization"
+      },
+      {
+        id: "03",
+        label: "Bartenders",
+        description:
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+        icon: <span className="icon-trolly text-2xl m-auto"></span>,
+        href: "/services/logisticOrganization"
+      },
+      {
+        id: "04",
+        label: "Event Manager",
+        description:
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+        icon: <span className="icon-trolly text-2xl m-auto"></span>,
+        href: "/services/logisticOrganization"
+      },
+      {
+        id: "05",
+        label: "Singer",
+        description:
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+        icon: <span className="icon-trolly text-2xl m-auto"></span>,
+        href: "/services/logisticOrganization"
+      },
+      {
+        id: "06",
+        label: "Hostess",
+        description:
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+        icon: <span className="icon-SpecialDeliveries text-2xl m-auto"></span>,
+        href: "/services/specialDeliveries"
+      },
+      {
+        id: "07",
+        label: "Presenter",
+        description:
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+        icon: <span className="icon-SpecialDeliveries text-2xl m-auto"></span>,
+        href: "/services/specialDeliveries"
+      },
+      {
+        id: "08",
+        label: "Actor",
+        description:
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+        icon: <span className="icon-SpecialDeliveries text-2xl m-auto"></span>,
+        href: "/services/specialDeliveries"
+      },
+      {
+        id: "09",
+        label: "Instrument Player",
+        description:
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+        icon: <span className="icon-SpecialDeliveries text-2xl m-auto"></span>,
+        href: "/services/specialDeliveries"
+      },
+      
+    ],
+  },
+  {
+    id: "3",
+    title: "Marketing & Media Industry",
     items: [
       {
         id: "01",
@@ -149,4 +293,59 @@ export const tabs = [
       },
     ],
   },
+  {
+    id: "4",
+    title: "Exhibition",
+    items: [
+      {
+        id: "01",
+        label: "Card",
+        description:
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+        icon: <span className="icon-road text-2xl m-auto "></span>,
+        href: "/services/roadTransport"
+      },
+      {
+        id: "02",
+        label: "Card",
+        description:
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+        icon: <span className="icon-ExpressTransport text-2xl m-auto"></span>,
+        href: "/services/expressTransport"
+      },
+      {
+        id: "03",
+        label: "Card",
+        description:
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+        icon: <span className="icon-Gloves text-2xl m-auto"></span>,
+        href: "/services/whiteGloveRetreats"
+      },
+      {
+        id: "04",
+        label: "Card",
+        description:
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+        icon: <span className="icon-handluggage text-2xl m-auto"></span>,
+        href: "/services/whiteGloveRetreats"
+      },
+      {
+        id: "05",
+        label: "Card",
+        description:
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+        icon: <span className="icon-Furniture text-2xl m-auto"></span>,
+        href: "/services/highRangeFurniture"
+      },
+      {
+        id: "06",
+        label: "Card",
+        description:
+          " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos tempora ipsa suscipit eligendi eius, accusamus vero adipisci deleniti, sequi non quae incidunt laboriosam porro temporibus beatae sint perferendis quidem pariatur commodi perspiciatis quos nisi debitis sed? Sed, voluptatem ex.",
+        icon: <span className="icon-SpecialDeliveries text-2xl m-auto"></span>,
+        href: "/services/specialDeliveries"
+      },
+    ],
+  },
+  
 ];

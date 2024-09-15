@@ -41,51 +41,22 @@ const imageVariants = {
 const boxes = [
   {
     id: 1,
-    name: "Card",
+    name: "Female Model",
     image: "/images/transport/transport1.png",
     href: "/services/roadTransport",
   },
-  // {
-  //   id: 2,
-  //   name: "Helicopter Transport",
-  //   image: "/images/transport/transport2.png"
-  // },
   {
-    id: 3,
-    name: "Card",
+    id: 2,
+    name: "Influencer",
     image: "/images/transport/transport3.png",
     href: "/services/airTransport",
   },
   {
-    id: 4,
-    name: "Card",
+    id: 3,
+    name: "Twins",
     image: "/images/transport/transport4.png",
     href: "/services",
-  },
-  {
-    id: 5,
-    name: "Card",
-    href: "/services/luxuryFurniture",
-    image: "/images/transport/transport5.png",
-  },
-  {
-    id: 6,
-    name: "Card",
-    href: "/services/expressTransport",
-    image: "/images/transport/transport6.png",
-  },
-  {
-    id: 7,
-    name: "Card",
-    href: "/services/specialDeliveries",
-    image: "/images/transport/transport7.png",
-  },
-  {
-    id: 8,
-    name: "Card",
-    href: "/services/internationalTransport",
-    image: "/images/transport/transport8.png",
-  },
+  }
 ];
 const TypeOfTransport = () => {
   const navRef = useRef();
@@ -134,7 +105,7 @@ const TypeOfTransport = () => {
             }}
             className="md:text-4xl text-xl font-semibold"
           >
-            Types
+            Top Models
           </motion.h1>
           <div className="flex flex-1 items-start justify-end gap-4">
             <motion.div
