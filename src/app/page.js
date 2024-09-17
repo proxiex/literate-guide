@@ -12,6 +12,7 @@ import Reviews from "@/component/services/reviews";
 import TrustCompany from "@/component/trustCompany/trustCompany";
 
 
+
 export default function Home() {
   return (
     <main className="min-h-screen w-full top-bg">
