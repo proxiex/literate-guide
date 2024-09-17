@@ -2,11 +2,11 @@
 import React, { useState } from "react";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
-import ContactFirst from "./ContactFirst";
-import ContactFirstOther from "./ContactFirstOther";
-import ContactHeader from "./ContactHeader";
-import ContactSecond from "./ContactSecond";
-import ContactThird from "./ContactThird";
+import ContactFirst from "./contactFirst";
+import ContactFirstOther from "./contactFirstOther";
+import ContactHeader from "./contactHeader";
+import ContactSecond from "./contactSecond";
+import ContactThird from "./contactThird";
 
 function ContactUsComponent() {
   const [stepper, setstepper] = useState(0);
